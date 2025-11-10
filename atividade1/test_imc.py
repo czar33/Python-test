@@ -4,6 +4,7 @@ from imc import classificar_imc
 def test_calcular_imc():
     assert calcular_imc(70, 1.75) == 22.86
     assert round(70 / (1.75 ** 2), 2) != 22.867
+    assert calcular_imc(70,0) == "Altura deve ser maior que zero."
 
 def test_classificar_imc():
     assert classificar_imc(17.9) == "Abaixo do peso"
@@ -12,4 +13,4 @@ def test_classificar_imc():
     assert classificar_imc(33.0) == "Obesidade grau I"
     assert classificar_imc(37.0) == "Obesidade grau II"
     assert classificar_imc(45.0) == "Obesidade grau III"
-
+    

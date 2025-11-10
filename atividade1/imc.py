@@ -1,6 +1,6 @@
 def calcular_imc(peso, altura):
     if altura <=0:
-        raise ValueError("Altura deve ser maior que zero.")
+        return ("Altura deve ser maior que zero.")
     return round(peso / (altura ** 2), 2)
 
 def classificar_imc(imc):
